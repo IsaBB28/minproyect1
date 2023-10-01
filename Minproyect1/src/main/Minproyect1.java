@@ -15,6 +15,13 @@ public class Minproyect1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+   // create an object of Main
+    Inicio obj = new Inicio();
+
+    // calling method with no parameter
+    obj.display1();
+    
+    
     }
     
 }
