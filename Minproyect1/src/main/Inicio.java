@@ -28,7 +28,7 @@ import javax.swing.JPanel;
     
      initComponents();
     
-        add(panelCentral);
+        add(panelCentral, java.awt.BorderLayout.CENTER);
         add(panelSuperior, java.awt.BorderLayout.PAGE_START);
         add(jDesktopPane);
         
@@ -51,19 +51,19 @@ import javax.swing.JPanel;
         botonJugar = new JButton();
         botonJugar.setFont(new java.awt.Font("tahoma", 0,36)); 
         botonJugar.setText("JUGAR");
-        botonJugar.setBounds(80, 0, 200, 150);
+        
         botonInstrucciones = new JButton();
         botonInstrucciones.setFont(new java.awt.Font("tahoma", 0,36)); 
         botonInstrucciones.setText("INSTRUCCIONES");
-        botonInstrucciones.setBounds(50, 0, 170, 120);
+        
         
         panelSuperior = new JPanel();
         panelSuperior.setBackground(new java.awt.Color(204, 204, 0));
         panelSuperior.add(etiquetaTitulo);
         
         panelCentral = new JPanel();
-        panelCentral.setBackground(new java.awt.Color(102, 102, 0));
-        panelCentral.setLayout(null);
+        panelCentral.setBackground(new java.awt.Color(204, 204, 0));
+        
         panelCentral.add(botonJugar);
         panelCentral.add(botonInstrucciones);
         
@@ -71,8 +71,7 @@ import javax.swing.JPanel;
         
         //panelCentral.setLayout(new java.awt.BorderLayout());
         
-        panelCentral.setLayout(new java.awt.BorderLayout(3,3));
-        panelCentral.add(jDesktopPane,java.awt.BorderLayout.CENTER);
+        
         
     }
     
